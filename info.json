@@ -7,5 +7,5 @@
     "homepage": "",
     "factorio_version": "0.16",
     "dependencies": ["base >= 0.16"],
-    "description": "Makes 0.16 feel like 0.17"
+    "description": "Makes 0.16 feel like 0.17 may be, in science, ingredient costs and some gameplay balances"
 }

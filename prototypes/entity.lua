@@ -17,3 +17,14 @@ playerCharacter.animations[3].mining_with_hands = playerCharacter.animations[3].
 
 --car has rocket launcher as extra weapon
 data.raw["car"]["car"].guns = { "vehicle-machine-gun", "car-rocket-launcher" }
+
+--belt speeds increased to 15/30/45
+data.raw["transport-belt"]["transport-belt"].speed = 0.03515625
+data.raw["transport-belt"]["fast-transport-belt"].speed = 0.0703125
+data.raw["transport-belt"]["express-transport-belt"].speed = 0.10546875
+data.raw["splitter"]["splitter"].speed = 0.03515625
+data.raw["splitter"]["fast-splitter"].speed = 0.0703125
+data.raw["splitter"]["express-splitter"].speed = 0.10546875
+data.raw["underground-belt"]["underground-belt"].speed = 0.03515625
+data.raw["underground-belt"]["fast-underground-belt"].speed = 0.0703125
+data.raw["underground-belt"]["express-underground-belt"].speed = 0.10546875

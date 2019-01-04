@@ -1,10 +1,13 @@
 # Factorio-JD_17_Simulation
-Mod aims to include all science, recipe and game changes that are sensible to simulate in 0.16 that have been announced for 0.17. Also all technologies are hidden until you have researched all of the ingredients, as per comment in FFF.
+The mod aims to give a possible expereince of what 0.17 may be like when released. It includes all known new science pack recipes and technologies, other new technologies and changes, changed recipes and game play changes that have been announced for 0.17. It also includes some choice non-confirmed and suggested modifications listed below based on a streamed discussion with developers.
+This mod is only tested with starting a new map in 0.16. Mod is NOT and will not be compatible with 0.17 when it is released.
+
+The tech tree is more natural to navigate as all technologies are hidden until you have researched all of the ingredients, as per a comment in FFF.
 A number of exact costs are not known so an estimated cost has been applied for an approximate feel.
 
 Choice Modifications
 --------------
-There are a number of chnages in this mod that are not mentioned in any FFF, but have been either implied or suggestedby developers or suggested by the community. These changes are listed below for reference:
+There are a number of changes in this mod that are not mentioned in any FFF, but have been either implied or suggested by developers, or suggested by the community and not instantly dismissed by developers in a stream. These changes are listed below for reference:
 
  - assemblying machines all have an ingredient limit of 6
  - assemblying machine 2 requires steel in recipe
@@ -27,4 +30,6 @@ There are a number of chnages in this mod that are not mentioned in any FFF, but
 
 Notes
 -----------
-At present the new researches don't have any specific placement order in the tech tree and old technologoes haven't been re-ordered. So they may be a little oddly placed.
+ - At present the new researches don't have any specific placement order in the tech tree and old technologoes haven't been re-ordered. So they may be a little oddly placed.
+ - This mod doesn't try to deal with any previous researches and thus isn't compatible with exisitng saves. Start a new game with the mod.
+ - The mod won't be compatible with 0.17 when it is released as there will be duplicate and overwriting technologies, recipes, etc. There is no intention to make the mod compatible with 0.17 when it is released as the mod is a simulation of a posisble 17 exerpience.

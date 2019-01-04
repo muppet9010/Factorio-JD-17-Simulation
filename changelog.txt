@@ -3,6 +3,7 @@
  - lube not unlocked by basic oil processing any more
  - portable solar panel needs solar energy researched first
  - uranium processing is its own technology. gives uranium mining and nuclear fuel (vehicles)
+ - belt speeds increased to 15/30/45
 
 0.1.0
 ------------
