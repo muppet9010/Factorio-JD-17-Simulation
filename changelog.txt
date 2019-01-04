@@ -1,0 +1,9 @@
+0.1.1
+-----------
+ - lube not unlocked by basic oil processing any more
+ - portable solar panel needs solar energy researched first
+ - uranium processing is its own technology. gives uranium mining and nuclear fuel (vehicles)
+
+0.1.0
+------------
+ - initial version with everything from FFF, developer chats and some suggested and implied changes.

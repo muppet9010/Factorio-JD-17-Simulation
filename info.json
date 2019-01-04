@@ -1,0 +1,11 @@
+{
+    "name": "JD_17_Simulation",
+    "version": "0.1.1",
+    "title": "JDs 0.17 Simulation",
+    "author": "JD-Plays & Muppet9010",
+    "contact": "",
+    "homepage": "",
+    "factorio_version": "0.16",
+    "dependencies": ["base >= 0.16"],
+    "description": "Makes 0.16 feel like 0.17"
+}
