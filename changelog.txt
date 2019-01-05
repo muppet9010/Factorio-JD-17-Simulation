@@ -1,0 +1,14 @@
+0.1.1
+-----------
+ - lube not unlocked by basic oil processing any more
+ - portable solar panel needs solar energy researched first
+ - uranium processing is its own technology. gives uranium mining and nuclear fuel (vehicles)
+ - belt speeds increased to 15/30/45
+ - numerous description changes of techs
+ - all new military technologies implimented in simple manner (effects merged, but not accounting for research pack types) - land mines not affected
+ - fixed that small power poles shouldn't need iron sticks
+ - assembly machine 2 recipe corrected to 2 steel plate from 4
+
+0.1.0
+------------
+ - initial version with everything from FFF, developer chats and some suggested and implied changes.
