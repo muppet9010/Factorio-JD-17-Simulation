@@ -1,7 +1,7 @@
 --changed iron plate to steel plate
 local assemblingMachine2 = data.raw["recipe"]["assembling-machine-2"]
 assemblingMachine2.normal.ingredients = {
-    {"steel-plate", 4},
+    {"steel-plate", 2},
     {"electronic-circuit", 3},
     {"iron-gear-wheel", 5},
     {"assembling-machine-1", 1}
@@ -19,14 +19,6 @@ mediumpole.ingredients = {
     {"steel-plate", 2},
     {"copper-plate", 3},
     {"iron-stick", 4},
-}
-
---changed added sticks
-local smallpole = data.raw["recipe"]["small-electric-pole"]
-smallpole.ingredients = {
-    {"raw-wood", 1},
-    {"copper-cable", 2},
-    {"iron-stick", 2},
 }
 
 --changed added sticks

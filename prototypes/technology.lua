@@ -149,8 +149,8 @@ oilProc.effects = {
         recipe = "solid-fuel-from-petroleum-gas"
     },
     {
-    type = "unlock-recipe",
-    LuaRecipepe = "solid-fuel-from-heavy-oil"
+        type = "unlock-recipe",
+        recipe = "solid-fuel-from-heavy-oil"
     }
 }
 oilProc.prerequisites = {"steel-processing", "logistics-science-pack"}
@@ -485,7 +485,7 @@ nuclearPower.effects = {
     },
     {
         type = "unlock-recipe",
-        LuaRecipee = "heat-exchanger"
+        recipe = "heat-exchanger"
     },
     {
         type = "unlock-recipe",
@@ -631,16 +631,6 @@ data.raw["technology"]["personal-roboport-equipment-2"].prerequisites = {"person
 
 --solar panel equipment requires
 data.raw["technology"]["solar-panel-equipment"].prerequisites = {"solar-energy"}
-
---remove all old military bonuses
-local oldMilitaryTechNames = {"grenade-damage-", "shotgun-shell-damage-", "shotgun-shell-speed-", "laser-turret-damage-", "laser-turret-speed-", "gun-turret-damage-", "flamethrower-damage-", "bullet-damage-", "bullet-speed-", "rocket-damage-", "rocket-speed-", "cannon-shell-damage-", "cannon-shell-speed-"}
-for techName, techDetails in pairs(data.raw["technology"]) do
-    for oldMilitaryNameKey, oldMilitaryNameText in pairs(oldMilitaryTechNames) do
-        if string.sub(techName, 1, string.len(oldMilitaryNameText)) == oldMilitaryNameText then
-            data.raw["technology"][techName] = nil
-        end
-    end
-end
 
 --technologies that need logistics science pack added to prerequisites
 data.raw["technology"]["military-2"].prerequisites = {"military", "steel-processing", "logistics-science-pack"}
