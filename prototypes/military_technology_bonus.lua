@@ -2,8 +2,8 @@
 
 local Constants = require("constants")
 
---remove all old military bonuses (laser turret shooting speed not affected)
-local oldMilitaryTechNames = {"grenade-damage-", "shotgun-shell-damage-", "shotgun-shell-speed-", "laser-turret-damage-", "gun-turret-damage-", "bullet-damage-", "bullet-speed-", "rocket-damage-", "rocket-speed-", "cannon-shell-damage-", "cannon-shell-speed-"}
+--remove all old military bonuses (flamables, laser turret shooting speed and robot follower count not affected)
+local oldMilitaryTechNames = {"grenade-damage-", "shotgun-shell-damage-", "shotgun-shell-speed-", "laser-turret-damage-", "gun-turret-damage-", "bullet-damage-", "bullet-speed-", "rocket-damage-", "rocket-speed-", "cannon-shell-damage-", "cannon-shell-speed-", "combat-robot-damage-"}
 for techName in pairs(data.raw["technology"]) do
     for key, oldMilitaryNameText in pairs(oldMilitaryTechNames) do
         if string.sub(techName, 1, string.len(oldMilitaryNameText)) == oldMilitaryNameText then
@@ -12,7 +12,7 @@ for techName in pairs(data.raw["technology"]) do
     end
 end
 
---ALL TECH COSTS DOUBLED FROM BASE RESEARCH BLINDLY
+--ALL TECH COSTS DOUBLED FROM BASE RESEARCH BLINDLY WHEN OLD TECHS MERGED
 
 --Physical projectile damage - Bullets, Gun turrets, Shotgun shells, Tank cannon shell
 data:extend({
@@ -80,7 +80,7 @@ data:extend({
             modifier = 0.2
           }
       },
-      prerequisites = {"physical-projectile-damage-1"},
+      prerequisites = {"physical-projectile-damage-1", "logistics-science-pack"},
       unit =
       {
         count = 200,
@@ -122,7 +122,7 @@ data:extend({
             modifier = 0.2
           }
       },
-      prerequisites = {"physical-projectile-damage-2"},
+      prerequisites = {"physical-projectile-damage-2", "military-science-pack"},
       unit =
       {
         count = 200,
@@ -208,7 +208,7 @@ data:extend({
             modifier = 0.5
           }
       },
-      prerequisites = {"physical-projectile-damage-4"},
+      prerequisites = {"physical-projectile-damage-4", "chemical-science-pack"},
       unit =
       {
         count = 400,
@@ -252,7 +252,7 @@ data:extend({
             modifier = 1
           }
       },
-      prerequisites = {"physical-projectile-damage-5"},
+      prerequisites = {"physical-projectile-damage-5", "utility-science-pack"},
       unit =
       {
         count = 600,
@@ -297,7 +297,7 @@ data:extend({
             modifier = 1
           }
       },
-      prerequisites = {"physical-projectile-damage-6"},
+      prerequisites = {"physical-projectile-damage-6", "space-science-pack"},
       unit =
       {
         count_formula = "2^(L-7)*2000",
@@ -435,7 +435,7 @@ data:extend({
                 modifier = 0.2
               }
         },
-        prerequisites = {"energy-weapons-damage-2"},
+        prerequisites = {"energy-weapons-damage-2", "chemical-science-pack"},
         unit =
         {
           count = 200,
@@ -523,7 +523,7 @@ data:extend({
                 modifier = 0.3
               }
         },
-        prerequisites = {"energy-weapons-damage-4"},
+        prerequisites = {"energy-weapons-damage-4", "utility-science-pack"},
         unit =
         {
           count = 400,
@@ -658,7 +658,7 @@ data:extend({
                 modifier = 0.7
               }
         },
-        prerequisites = {"energy-weapons-damage-7"},
+        prerequisites = {"energy-weapons-damage-7", "space-science-pack"},
         unit =
         {
           count_formula = "2^(L-8)*2000",
@@ -697,9 +697,14 @@ data:extend({
             type = "ammo-damage",
             ammo_category = "rocket",
             modifier = 0.2
+          },
+          {
+            type = "ammo-damage",
+            ammo_category = "landmine",
+            modifier = 0.2
           }
         },
-        prerequisites = {"military-2"},
+        prerequisites = {"military-2", "military-science-pack"},
         unit =
         {
           count = 100,
@@ -729,6 +734,11 @@ data:extend({
           {
             type = "ammo-damage",
             ammo_category = "rocket",
+            modifier = 0.2
+          },
+          {
+            type = "ammo-damage",
+            ammo_category = "landmine",
             modifier = 0.2
           }
         },
@@ -763,6 +773,11 @@ data:extend({
             type = "ammo-damage",
             ammo_category = "rocket",
             modifier = 0.3
+          },
+          {
+            type = "ammo-damage",
+            ammo_category = "landmine",
+            modifier = 0.2
           }
         },
         prerequisites = {"stronger-explosives-2"},
@@ -796,9 +811,14 @@ data:extend({
             type = "ammo-damage",
             ammo_category = "rocket",
             modifier = 0.3
+          },
+          {
+            type = "ammo-damage",
+            ammo_category = "landmine",
+            modifier = 0.2
           }
         },
-        prerequisites = {"stronger-explosives-3"},
+        prerequisites = {"stronger-explosives-3", "chemical-science-pack"},
         unit =
         {
           count = 600,
@@ -830,6 +850,11 @@ data:extend({
             type = "ammo-damage",
             ammo_category = "rocket",
             modifier = 0.3
+          },
+          {
+            type = "ammo-damage",
+            ammo_category = "landmine",
+            modifier = 0.2
           }
         },
         prerequisites = {"stronger-explosives-4"},
@@ -864,9 +889,14 @@ data:extend({
             type = "ammo-damage",
             ammo_category = "rocket",
             modifier = 0.5
+          },
+          {
+            type = "ammo-damage",
+            ammo_category = "landmine",
+            modifier = 0.2
           }
         },
-        prerequisites = {"stronger-explosives-5"},
+        prerequisites = {"stronger-explosives-5", "utility-science-pack"},
         unit =
         {
           count = 2000,
@@ -899,9 +929,14 @@ data:extend({
             type = "ammo-damage",
             ammo_category = "rocket",
             modifier = 0.5
+          },
+          {
+            type = "ammo-damage",
+            ammo_category = "landmine",
+            modifier = 0.2
           }
         },
-        prerequisites = {"stronger-explosives-6"},
+        prerequisites = {"stronger-explosives-6", "space-science-pack"},
         unit =
         {
           count_formula = "2^(L-6)*2000",
@@ -923,14 +958,34 @@ data:extend({
 })
 
 --Refined flammables - Flamethrower turret, Flamethrower (handheld)
---No changes needed other than name and graphics
 data.raw["technology"]["flamethrower-damage-1"].icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
+
 data.raw["technology"]["flamethrower-damage-2"].icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
-data.raw["technology"]["flamethrower-damage-3"].icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
+
+local flameDamage3 = data.raw["technology"]["flamethrower-damage-3"]
+flameDamage3.icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
+flameDamage3.prerequisites = {"flamethrower-damage-2", "chemical-science-pack"}
+
 data.raw["technology"]["flamethrower-damage-4"].icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
-data.raw["technology"]["flamethrower-damage-5"].icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
+
+local flameDamage5 = data.raw["technology"]["flamethrower-damage-5"]
+flameDamage5.icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
+flameDamage5.prerequisites = {"flamethrower-damage-4", "utility-science-pack"}
+
 data.raw["technology"]["flamethrower-damage-6"].icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
-data.raw["technology"]["flamethrower-damage-7"].icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
+
+local flameDamage7 = data.raw["technology"]["flamethrower-damage-7"]
+flameDamage7.icon = Constants.GraphicsModName .. "/graphics/refined-flammables.png"
+flameDamage7.prerequisites = {"flamethrower-damage-6", "space-science-pack"}
+
+--laser shooting speed
+data.raw["technology"]["laser-turret-speed-3"].prerequisites = {"laser-turret-speed-2", "chemical-science-pack"}
+data.raw["technology"]["laser-turret-speed-5"].prerequisites = {"laser-turret-speed-4", "utility-science-pack"}
+
+--follower robot count
+table.insert(data.raw["technology"]["follower-robot-count-3"].prerequisites, "chemical-science-pack")
+table.insert(data.raw["technology"]["follower-robot-count-5"].prerequisites, "utility-science-pack")
+table.insert(data.raw["technology"]["follower-robot-count-6"].prerequisites, "space-science-pack")
 
 --Weapon shooting speed - Bullets, Shotgun shells, Tank cannon shells, Rockets
 data:extend({
@@ -993,7 +1048,7 @@ data:extend({
             modifier = 0.3
           }
         },
-        prerequisites = {"weapon-shooting-speed-1"},
+        prerequisites = {"weapon-shooting-speed-1", "logistics-science-pack"},
         unit =
         {
           count = 200,
@@ -1077,7 +1132,7 @@ data:extend({
             modifier = 0.2
           }
         },
-        prerequisites = {"weapon-shooting-speed-3"},
+        prerequisites = {"weapon-shooting-speed-3", "military-science-pack"},
         unit =
         {
           count = 400,
@@ -1120,7 +1175,7 @@ data:extend({
             modifier = 0.3
           }
         },
-        prerequisites = {"weapon-shooting-speed-4"},
+        prerequisites = {"weapon-shooting-speed-4", "chemical-science-pack"},
         unit =
         {
           count = 400,
@@ -1164,7 +1219,7 @@ data:extend({
             modifier = 0.6
           }
         },
-        prerequisites = {"weapon-shooting-speed-5"},
+        prerequisites = {"weapon-shooting-speed-5", "utility-science-pack"},
         unit =
         {
           count = 800,
