@@ -43,6 +43,7 @@ sciencePack3.ingredients = {
 	{"engine-unit", 2},
 	{"solid-fuel", 1},
 }
+sciencePack3.result_count = 2
 
 --military science ingredients
 data.raw["recipe"]["military-science-pack"].ingredients ={

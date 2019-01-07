@@ -1,11 +1,11 @@
 {
     "name": "JD_17_Simulation",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "title": "JDs 0.17 Simulation",
     "author": "JD-Plays & Muppet9010",
     "contact": "",
     "homepage": "",
     "factorio_version": "0.16",
     "dependencies": ["base >= 0.16"],
-    "description": "Makes 0.16 feel approximately like 0.17 could, in science, ingredient costs and some gameplay balances"
+    "description": "Emulates 0.17 as much as known from Factorio Friday Facts. Changes science packs, tech tree, ingredient costs and some gameplay elements"
 }

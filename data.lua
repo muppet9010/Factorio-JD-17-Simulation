@@ -1,6 +1,6 @@
 require("prototypes/entity")
 require("prototypes/recipe")
 require("prototypes/technology")
-require("prototypes/military_technology")
+require("prototypes/military_technology_bonus")
 require("prototypes/item")
 require("prototypes/equipment")

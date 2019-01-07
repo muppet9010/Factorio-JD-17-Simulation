@@ -1,5 +1,3 @@
---TODO: add the new military upgrades in. removed the old ones
-
 local Constants = require("constants")
 
 --rocket fuel made same count, time and order as eletric engines as same place in tech tree screenshot
@@ -496,7 +494,7 @@ nuclearPower.effects = {
         recipe = "steam-turbine"
     }
 }
-nuclearPower.prerequsites = {"uranium-processing", "advanced-electronics", "concrete"}
+nuclearPower.prerequisites = {"uranium-processing", "advanced-electronics", "concrete"}
 nuclearPower.unit.count = 750
 
 --Kovarex
@@ -684,8 +682,10 @@ data.raw["technology"]["mining-productivity-8"].prerequisites = {"mining-product
 data.raw["technology"]["worker-robots-storage-2"].prerequisites = {"worker-robots-storage-1", "production-science-pack"}
 data.raw["technology"]["research-speed-5"].prerequisites = {"research-speed-4", "production-science-pack"}
 data.raw["technology"]["worker-robots-speed-3"].prerequisites = {"worker-robots-speed-2", "production-science-pack"}
+data.raw["technology"]["braking-force-3"].prerequisites = {"braking-force-2", "production-science-pack"}
 
 --needs utility science pack researchs
+data.raw["technology"]["military-4"].prerequisites = {"military-3", "utility-science-pack"}
 
 --needs production and utility science pack researchs
 data.raw["technology"]["character-logistic-slots-6"].prerequisites = {"character-logistic-slots-5", "production-science-pack", "utility-science-pack"}
@@ -694,6 +694,7 @@ data.raw["technology"]["mining-productivity-12"].prerequisites = {"mining-produc
 data.raw["technology"]["worker-robots-storage-3"].prerequisites = {"worker-robots-storage-2", "production-science-pack", "utility-science-pack"}
 data.raw["technology"]["research-speed-6"].prerequisites = {"research-speed-5", "production-science-pack", "utility-science-pack"}
 data.raw["technology"]["worker-robots-speed-5"].prerequisites = {"worker-robots-speed-4", "production-science-pack", "utility-science-pack"}
+data.raw["technology"]["braking-force-6"].prerequisites = {"braking-force-5", "production-science-pack", "utility-science-pack"}
 
 --needs space science research
 data.raw["technology"]["mining-productivity-16"].prerequisites = {"mining-productivity-12", "space-science-pack"}
