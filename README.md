@@ -1,5 +1,5 @@
 # Factorio-JD_17_Simulation
-The mod aims to emulate 0.17 as known from Factorio Friday Facts. It includes the new science pack recipes, full new tech tree, military tech changes, plus gameplay changes. It also includes some minor choice non-confirmed and suggested modifications (listed below) based on a streamed discussion with developers.
+The mod aims to emulate 0.17 as known from Factorio Friday Facts. It includes the new science pack recipes, full new tech tree, military tech changes, plus gameplay changes. It also includes some minor choice non-confirmed and suggested modifications (listed below) based on a streamed discussion with developers. It doesn't include the quality of life changes or other changes that would be a full mod in their own right.
 It was designed for use on a community map hosted by streamer [JD-Plays](https://www.twitch.tv/jd_play5)
 
 This mod subtracts all removed researches and bonuses from teams and thus should work with old saves, but may be a bit bumpy as you will have to re-do some military bonus researches and from recipe changes. Advised to start a new game with the mod due to all the recipe and game changes. Mod is NOT and will not be compatible with 0.17 when it is released, you will need to remove the mod at this point.
@@ -30,8 +30,9 @@ Suggested Mods
 -------------
 Below are the suggested additional mods that already add functionality that has been announced for 0.17 or that 0.17 has been inspired by.
 
- - [Upgrade Builer and Planner](https://mods.factorio.com/mod/upgrade-planner)
- -
+ - [Upgrade Buidler and Planner](https://mods.factorio.com/mod/upgrade-planner)
+ - [Blueprintable Train](https://mods.factorio.com/mod/blueprint-train)
+ - [Cliff Deconstruct](https://mods.factorio.com/mod/CliffDeconstruct)
 
 Choice Modifications
 --------------
@@ -55,4 +56,5 @@ Limitations
 Notes
 -----------
  - At present the new researches don't have any specific placement order in the tech tree and old technologoes haven't been re-ordered. So they may be a little oddly placed. But as all technologies are locked behind their prerequisites now your available selection is guided.
- - The mod won't be compatible with 0.17 when it is released as there will be duplicate and overwriting technologies, recipes, etc. There is no intention to make the mod compatible with 0.17 when it is released as the mod is a simulation of a posisble 17 exerpience. You will need to remvoe the mod and research any missing technologies plus reset any changed recipes.
+ - The mod won't be compatible with 0.17 when it is released as there will be duplicate and overwriting technologies, recipes, etc. There is no intention to make the mod compatible with 0.17 when it is released as the mod is a simulation of a posisble 17 exerpience. You will need to remove the mod and research any missing technologies plus reset any changed recipes.
+- This mod is a balance between getting the 0.17 feel without us having to write 0.17 ourselves. Therefore we have focused on the gameplay changes that impact the factory most. The quality of life chnages like Undo, etc have been ignored for expedience.
