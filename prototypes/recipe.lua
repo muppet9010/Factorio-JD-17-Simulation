@@ -127,3 +127,11 @@ data.raw["recipe"]["personal-roboport-mk2-equipment"].ingredients = {
 	{"personal-roboport-equipment", 5},
     {"low-density-structure", 100}
 }
+
+
+--coal liquifaction ratio chnaged to favour heavy oil
+data.raw["recipe"]["coal-liquefaction"].results={
+	{type="fluid", name="heavy-oil", amount=100},
+	{type="fluid", name="light-oil", amount=10},
+	{type="fluid", name="petroleum-gas", amount=10}
+}

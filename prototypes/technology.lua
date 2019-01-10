@@ -151,7 +151,7 @@ oilProc.effects = {
         recipe = "solid-fuel-from-heavy-oil"
     }
 }
-oilProc.prerequisites = {"steel-processing", "logistics-science-pack"}
+oilProc.prerequisites = {"steel-processing", "logistics-science-pack", "fluid-handling"}
 
 --add lubricant to prereqs of items that use it
 data.raw["technology"]["logistics-3"].prerequisites = {"logistics-2", "automation-3", "lubricant"}
