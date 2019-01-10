@@ -34,3 +34,10 @@ data:extend({
         stack_size = 5
     }
 })
+
+--Armors have near infinite durability
+data.raw["armor"]["light-armor"].durability = 9007199254740992
+data.raw["armor"]["heavy-armor"].durability = 9007199254740992
+data.raw["armor"]["modular-armor"].durability = 9007199254740992
+data.raw["armor"]["power-armor"].durability = 9007199254740992
+data.raw["armor"]["power-armor-mk2"].durability = 9007199254740992
