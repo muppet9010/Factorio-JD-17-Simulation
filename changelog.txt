@@ -1,32 +1,35 @@
+0.1.4
+ - changed Power Armor mk2 to only require level 2 modules (FFF 245). Updated science pre-reqs appropriately
+---------------------------------------------------------------------------------------------------
+
 0.1.3
-----------
  - changed all assembling machines to have no practical ingredient limit from 6
  - player mining speed research renamed to Steel Axe as advised
  - stone hardness changed to same as iron ore
  - fluid-handling is a prerequisite of oil processing
- - coal liquifaction ratio changed to mathc FFF description
+ - coal liquefaction ratio changed to match FFF description
  - armors have effectively infinite durability
+---------------------------------------------------------------------------------------------------
 
 0.1.2
-------------
  - fixed blue science recipe produces 2 packs now
- - landmine damage increases with Stronger Explosives at same rate as grenades (inagme shown bonus doesn't acount for it, but explosive damage is increased)
+ - landmine damage increases with Stronger Explosives at same rate as grenades (inagme shown bonus doesn't account for it, but explosive damage is increased)
  - military and robot bonus technologies locked behind their prerequisite science packs
  - fixed old combat robot upgrades not being removed, where affected by new techs
  - fixed a number of bonus research science pack prerequisites
  - all teams technology affects are reset upon mod upgrade to correct any previous mod technology oversights
+---------------------------------------------------------------------------------------------------
 
 0.1.1
------------
  - lube not unlocked by basic oil processing any more
  - portable solar panel needs solar energy researched first
  - uranium processing is its own technology. gives uranium mining and nuclear fuel (for vehicles)
  - belt speeds increased to 15/30/45
  - numerous description changes of techs
- - all new military technologies implimented in simple manner (effects merged, but not accounting for research pack types) - land mines not affected
+ - all new military technologies implemented in simple manner (effects merged, but not accounting for research pack types) - land mines not affected
  - fixed that small power poles shouldn't need iron sticks
  - assembly machine 2 recipe corrected to 2 steel plate from 4
+---------------------------------------------------------------------------------------------------
 
 0.1.0
-------------
  - initial version with everything from FFF, developer chats and some suggested and implied changes.

@@ -94,8 +94,8 @@ data.raw["recipe"]["atomic-bomb"].ingredients = {
 
 --steel and blue chips both changed to LDS
 data.raw["recipe"]["power-armor-mk2"].ingredients = {
-	{"effectivity-module-3", 5},
-	{"speed-module-3", 5},
+	{"effectivity-module-2", 5},
+	{"speed-module-2", 5},
 	{"low-density-structure", 80}
 }
 

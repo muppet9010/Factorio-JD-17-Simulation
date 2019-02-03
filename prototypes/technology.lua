@@ -613,7 +613,7 @@ powerArmor1.unit.ingredients = {
 powerArmor1.prerequisites = {"modular-armor", "electric-engine", "chemical-science-pack", "military-3", "advanced-electronics-2"}
 
 --power armor 2 needs military 4 research
-data.raw["technology"]["power-armor-2"].prerequisites = {"power-armor", "speed-module-3", "effectivity-module-3", "military-4", "utility-science-pack", }
+data.raw["technology"]["power-armor-2"].prerequisites = {"power-armor", "speed-module-2", "effectivity-module-2", "military-4", "utility-science-pack", }
 
 --fusion reactor requires military 3 research
 data.raw["technology"]["fusion-reactor-equipment"].prerequisites = {"solar-panel-equipment", "military-3", "utility-science-pack"}
